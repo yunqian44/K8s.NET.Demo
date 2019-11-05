@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+      restart: always
+      build: 
+        context: .
+        dockerfile: Dockerfile
+      image: "k8s.net.demo"
+      container_name: "k8s.net.demo"
+      # image: k8s.net.demo
+      ports:
+       - "8200:80"
