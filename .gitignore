@@ -42,3 +42,17 @@ obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
 obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
 obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+.vs/k8s.net.demo/v16/Server/sqlite3/db.lock
+.vs/k8s.net.demo/v16/.suo
+.vs/k8s.net.demo/config/applicationhost.config
+.vs/k8s.net.demo/DesignTimeBuild/.dtbcache
+bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.cshtml.g.cs
+.vs/k8s.net.demo/v16/Server/sqlite3/storage.ide

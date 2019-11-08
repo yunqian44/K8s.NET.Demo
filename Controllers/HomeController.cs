@@ -15,8 +15,14 @@ namespace k8s.net.demo.Controllers
         public IActionResult Index()
         {
             var hostname = Dns.GetHostName ();
-        ViewBag.HostName = hostname;
-        ViewBag.HostIp = Dns.GetHostAddresses (hostname).FirstOrDefault (ip => ip.AddressFamily == AddressFamily.InterNetwork);
+            ViewBag.HostName = hostname;
+            ViewBag.HostIp = Dns.GetHostAddresses (hostname).FirstOrDefault (ip => ip.AddressFamily == AddressFamily.InterNetwork);
+
+            var dbService = new DBService();
+            var tb = dbService.Single<Tb>("select * from Tb limit 1").Result;
+
+            ViewBag.Message = string.Format("Idx:{0},Name:{1}", tb.Idx, tb.Name);
+
             return View();
         }
 
