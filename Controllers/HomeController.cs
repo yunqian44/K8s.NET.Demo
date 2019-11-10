@@ -18,11 +18,11 @@ namespace k8s.net.demo.Controllers
             ViewBag.HostName = hostname;
             ViewBag.HostIp = Dns.GetHostAddresses (hostname).FirstOrDefault (ip => ip.AddressFamily == AddressFamily.InterNetwork);
 
-            var dbService = new DBService();
-            var tb = dbService.Single<Tb>("select * from Tb limit 1").Result;
+            //var dbService = new DBService();
+            //var tb = dbService.Single<Tb>("select * from Tb limit 1").Result;
 
-            ViewBag.Message = string.Format("Idx:{0},Name:{1}", tb.Idx, tb.Name);
-
+            //ViewBag.Message = string.Format("Idx:{0},Name:{1}", tb.Idx, tb.Name);
+            ViewBag.Message="测试";
             return View();
         }
 
