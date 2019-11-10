@@ -7,8 +7,6 @@ services:
         dockerfile: Dockerfile
       image: "k8s.net.demo"
       container_name: "k8s.net.demo"
-      depends_on: 
-          mysql
       # image: k8s.net.demo
       ports:
        - "8200:80"
