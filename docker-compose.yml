@@ -1,15 +1,16 @@
-version: '3'
+version: '3.4'
 services:
-  web:
-      restart: always
-      build: 
-        context: .
-        dockerfile: Dockerfile
-      image: "k8s.net.demo"
-      container_name: "k8s.net.demo"
-      # image: k8s.net.demo
-      ports:
-       - "8200:80"
+  #  本地构建docker-compose
+  # web:
+  #     restart: always
+  #     build: 
+  #       context: .
+  #       dockerfile: Dockerfile
+  #     image: "k8s.net.demo"
+  #     container_name: "k8s.net.demo"
+  #     # image: k8s.net.demo
+  #     ports:
+  #      - "8200:80"
   # mysql:
   #     container_name: mysql_dc
   #     restart: always
@@ -23,3 +24,20 @@ services:
   #        '--character-set-server=utf8',
   #        '--collation-server=utf8_unicode_ci'
   #     ]
+  web:
+      restart: always
+      image: "yunqian44/k8s.net.demo:v1"
+      deploy:
+        replicas: 1
+        resources:
+          limits: 
+            cpus: "0.1"
+            memory: 100M
+        restart_policy: #重启策略
+          condition: on-failure
+      ports:
+        - "8200:80"
+      networks: 
+      - gowebnet
+networks: 
+  gowebnet:
