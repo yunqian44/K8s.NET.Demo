@@ -22,7 +22,7 @@ namespace k8s.net.demo.Controllers
             //var tb = dbService.Single<Tb>("select * from Tb limit 1").Result;
 
             //ViewBag.Message = string.Format("Idx:{0},Name:{1}", tb.Idx, tb.Name);
-            ViewBag.Message="测试";
+            ViewBag.Message="测试，我是第三个版本";
             return View();
         }
 
